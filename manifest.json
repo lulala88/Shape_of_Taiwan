@@ -1,0 +1,30 @@
+{
+  "name": "Shape of Taiwan",
+  "version": "1.0",
+  "description": "Making you into the shape of Taiwan",
+  "permissions": [
+    "storage",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "css": ["style.css"]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "img/logo.ico",
+    "default_title": "Shape of Taiwan : Enabled"
+  },
+  "manifest_version": 2
+}
